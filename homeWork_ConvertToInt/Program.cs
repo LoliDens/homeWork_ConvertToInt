@@ -33,7 +33,5 @@ namespace homeWork_ConvertToInt
 
             return result;
         }
-
-
     }
 }
