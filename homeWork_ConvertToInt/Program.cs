@@ -9,10 +9,8 @@ namespace homeWork_ConvertToInt
     internal class Program
     {
         static void Main(string[] args)
-        {
-            int number;
-
-            number = TryConvert();
+        {           
+            int number = TryConvert();
             Console.WriteLine($"Введенное вами число - {number}");
             Console.ReadKey();
         }
@@ -20,10 +18,9 @@ namespace homeWork_ConvertToInt
         static int TryConvert() 
         {
             int result;
-            string numberForConvert;
-
+            
             Console.Write("Введите чило: ");
-            numberForConvert = Console.ReadLine();
+            string numberForConvert = Console.ReadLine();
 
             while (int.TryParse(numberForConvert, out result) == false) 
             {
