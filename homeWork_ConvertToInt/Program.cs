@@ -10,12 +10,12 @@ namespace homeWork_ConvertToInt
     {
         static void Main(string[] args)
         {           
-            int number = CreateAndConvertNumber();
+            int number = ReadNumber();
             Console.WriteLine($"Введенное вами число - {number}");
             Console.ReadKey();
         }
 
-        static int CreateAndConvertNumber() 
+        static int ReadNumber() 
         {
             int result;
             
