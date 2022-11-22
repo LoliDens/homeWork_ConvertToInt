@@ -17,14 +17,12 @@ namespace homeWork_ConvertToInt
 
         static int ReadNumber() 
         {
-            int result;
-            
-            Console.Write("Введите чило: ");
-            string numberForConvert = Console.ReadLine();
+            int result;                
+            string numberForConvert = "";
 
             while (int.TryParse(numberForConvert, out result) == false) 
             {
-                Console.Write("Число введено неверно\nВведите число повторно:");
+                Console.Write("Ввдите число:");
                 numberForConvert = Console.ReadLine();
             }
 
